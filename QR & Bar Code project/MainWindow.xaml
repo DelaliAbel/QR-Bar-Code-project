@@ -1,0 +1,46 @@
+﻿<Window x:Class="QR___Bar_Code_project.MainWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:local="clr-namespace:QR___Bar_Code_project" 
+        mc:Ignorable="d" 
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition  MinHeight="150" Height="auto"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="0,0">
+            <Label Content="GESCOM teste impression QR et BarCode" FontSize="18" FontWeight="Bold"/>
+            <TextBox Grid.ColumnSpan="2" Name="textbox" AcceptsReturn="True" Height="30" Width="320"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Button x:Name="BtnQR" Click="BtnQR_Click" Content="Genere QR Code"/>
+            <Image x:Name="borderQR" Height="150" Margin="0,10" Stretch="Uniform"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Button Name="BtnCodeBar"  Click="BtnCodeBar_Click" Content="Genere Bare code"/>
+            <Image x:Name="borderBarCode" Height="150" Margin="0,10" Stretch="Uniform"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="0">
+            <Button x:Name="BtnSaveQRCode" Click="BtnSaveCodeQRImg_Click" Content="Save QR Code To png"/>
+            <Button Content="Print QR Code" Click="BtnPrintQRCode"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <Button Content="Print Bar Code" Click="BtnPrintBarCode"/>
+            <Button x:Name="BtnSaveBarCode" Click="BtnSaveCodeBarImg_Click" Content="Save Bar Code To Png"/>
+            <Button Content="Print Text" Click="BtnPrintText"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
