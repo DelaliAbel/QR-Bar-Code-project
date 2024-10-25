@@ -232,17 +232,5 @@ namespace QR___Bar_Code_project
 
         #endregion
 
-
-
-        //Enregistrer en images
-        private void BtnSaveCodeBarImg_Click(object sender, RoutedEventArgs e)
-		{
-			string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-		}
-
-		private void BtnSaveCodeQRImg_Click(object sender, RoutedEventArgs e)
-		{
-
-        }
     }
 }

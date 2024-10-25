@@ -32,13 +32,11 @@
         </StackPanel>
 
         <StackPanel Grid.Row="2" Grid.Column="0">
-            <Button x:Name="BtnSaveQRCode" Click="BtnSaveCodeQRImg_Click" Content="Save QR Code To png"/>
             <Button Content="Print QR Code" Click="BtnPrintQRCode"/>
         </StackPanel>
 
         <StackPanel Grid.Row="2" Grid.Column="1">
             <Button Content="Print Bar Code" Click="BtnPrintBarCode"/>
-            <Button x:Name="BtnSaveBarCode" Click="BtnSaveCodeBarImg_Click" Content="Save Bar Code To Png"/>
             <Button Content="Print Text" Click="BtnPrintText"/>
         </StackPanel>
 
